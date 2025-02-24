@@ -78,3 +78,6 @@ Route::middleware('admin')->group(function () {
     Route::get('/event', [EventController::class, 'index']);
 });
 Route::redirect('/here', '/there');
+
+Route::view('/welcome', 'welcome');
+Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
